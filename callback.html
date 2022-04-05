@@ -1,0 +1,14 @@
+<script>
+    const fragment = new URLSearchParams(window.location.hash.slice(1));
+    const [accessToken, expiresIn] = [fragment.get('access_token'), parseInt(fragment.get('expires_in'))];
+
+    if (!accessToken) {
+        window.location.replace("/login.html")
+    } else {
+        localStorage.setItem("discord_token", accessToken)
+        const t = Math.floor(Date.now() / 1000);
+        localStorage.setItem("discord_expires", t + expiresIn)
+        window.location.replace("/index.html")
+    }
+
+</script>
