@@ -15,132 +15,111 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-green-700">
-    <header
-        class=" w-full h-24 bg-green-600 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b-4 border-b-black">
-        <div>
-            <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 240 240" width="40" height="40">
-                    <style>
-                        .a {
-                            fill: #00d600
-                        }
+<body class="h-screen bg-green-700">
+    <div class="h-full">
+        <header
+            class=" w-full h-24 bg-green-600 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b-4 border-b-black">
+            <div>
+                <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 240 240" width="40" height="40">
+                        <style>
+                            .a {
+                                fill: #00d600
+                            }
 
-                        .b {
-                            fill: #fff
-                        }
-                    </style>
-                    <circle class="a" cx="120" cy="120" r="120" />
-                    <path fill-rule="evenodd" d="m240 240h-141.6l-30.7-37.7 4.2-165.3 104.3-0.5 63.8 69.6z" />
-                    <path fill-rule="evenodd" class="b"
-                        d="m67.3 203v-180.8h62.5q27.9 0 43.1 11.6 15.1 11.7 15.1 33.1 0 16.6-7.7 26.4-7.8 9.8-22.8 12.2 18 3.9 28 16.2 10 12.3 10 30.7 0 24.2-16.5 37.4-16.4 13.2-46.8 13.2zm60.7-160.7h-36.3v54.5h36.3q17.9 0 26.6-6.7 8.8-6.7 8.8-20.5 0-13.7-8.8-20.5-8.7-6.8-26.6-6.8zm3 74.4h-39.3v66.2h39.3q19.7 0 29.2-8.1 9.5-8.2 9.5-25.1 0-16.9-9.5-24.9-9.5-8.1-29.2-8.1z" />
-                </svg>
-                <span class="ml-3 text-4xl text-black">BlackGame.net</span>
-            </a>
-        </div>
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="index.html" class="button flex group">
-                <!-- home icon start -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
-                </svg>
-                <!-- home icon end -->
-                </span>Home
-            </a>
-            <a href="downloads.html" class="button flex group">
-                <!-- download icon start -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z" />
-                </svg>
-                <!-- download icon end -->
-                </span>Downloads
-            </a>
-            <a href="server.html" class="button flex group">
-                <!-- dns icon start -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path
-                        d="M19 15v4H5v-4h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 18.5c-.82 0-1.5-.67-1.5-1.5s.68-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM19 5v4H5V5h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 8.5c-.82 0-1.5-.67-1.5-1.5S6.18 5.5 7 5.5s1.5.68 1.5 1.5S7.83 8.5 7 8.5z" />
-                </svg>
-                <!-- dns icon end -->
-                </span>Server
-            </a>
-            <a href="#" class="button flex group">
-                <!-- block icon start -->
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="M0 0h24v24H0V0z" fill="none" />
-                    <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z" />
-                </svg>
-                <!-- block icon end -->
-                </span>Stats
-            </a>
-        </nav>
-        </a>
-        <div id="login-platzhalter" class="h-16 w-20 bg-white/10 animate-pulse ml-5"></div>
-        <div id="login-button" hidden>
-            <a href="login.html" class="button flex group ml-5">
-                <!-- login icon start -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="m13 16 5-4-5-4v3H4v2h9z" />
-                    <path
-                        d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z" />
-                </svg>
-                <!-- login icon end -->
-                <span class="pl-1">
-                    Login
-                </span>
-            </a>
-        </div>
-        <div class="ml-5" id="login-user" hidden>
-            <div class="grid place-items-center">
-                <img id="avatar" class="rounded-full w-10 h-10" src="" alt="avatar">
-                <span id="username"></span>
+                            .b {
+                                fill: #fff
+                            }
+                        </style>
+                        <circle class="a" cx="120" cy="120" r="120" />
+                        <path fill-rule="evenodd" d="m240 240h-141.6l-30.7-37.7 4.2-165.3 104.3-0.5 63.8 69.6z" />
+                        <path fill-rule="evenodd" class="b"
+                            d="m67.3 203v-180.8h62.5q27.9 0 43.1 11.6 15.1 11.7 15.1 33.1 0 16.6-7.7 26.4-7.8 9.8-22.8 12.2 18 3.9 28 16.2 10 12.3 10 30.7 0 24.2-16.5 37.4-16.4 13.2-46.8 13.2zm60.7-160.7h-36.3v54.5h36.3q17.9 0 26.6-6.7 8.8-6.7 8.8-20.5 0-13.7-8.8-20.5-8.7-6.8-26.6-6.8zm3 74.4h-39.3v66.2h39.3q19.7 0 29.2-8.1 9.5-8.2 9.5-25.1 0-16.9-9.5-24.9-9.5-8.1-29.2-8.1z" />
+                    </svg>
+                    <span class="ml-3 text-4xl text-black">BlackGame.net</span>
+                </a>
             </div>
-        </div>
-    </header>
-
-
-
-
-
-
-    <div class="relative border-2 border-black m-20">
-
-        <div>
-            <input type="text" name="me" pattern="[A-Z0-9]+" maxlength="8" placeholder="" required value="" required>
-        </div>
-
-
-
-        <!-- avatar start -->
-        <div class="">
-            <div class="absolute right-0 top-0 border-2">
-                <div class="grid text-center justify-center m-5">
-
-
-
-
-                    <img id="avatar" class="rounded-2xl w-40 h-40"
-                        src="https://cdn.discordapp.com/avatars/442578124958597141/594e05064099569496f495b2440e5ddf.webp"
-                        alt="avatar">
-                    <span id="username" class="text-2xl">Black Tiger</span>
-
-
-
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="button flex group">
+                    <!-- home icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+                    </svg>
+                    <!-- home icon end -->
+                    </span>Home
+                </a>
+                <a href="downloads.html" class="button flex group">
+                    <!-- download icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z" />
+                    </svg>
+                    <!-- download icon end -->
+                    </span>Downloads
+                </a>
+                <a href="server.html" class="button flex group">
+                    <!-- dns icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 15v4H5v-4h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 18.5c-.82 0-1.5-.67-1.5-1.5s.68-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM19 5v4H5V5h14m1-2H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 8.5c-.82 0-1.5-.67-1.5-1.5S6.18 5.5 7 5.5s1.5.68 1.5 1.5S7.83 8.5 7 8.5z" />
+                    </svg>
+                    <!-- dns icon end -->
+                    </span>Server
+                </a>
+                <a href="#" class="button flex group">
+                    <!-- block icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z" />
+                    </svg>
+                    <!-- block icon end -->
+                    </span>Stats
+                </a>
+            </nav>
+            </a>
+            <div id="login-platzhalter" class="h-16 w-20 bg-white/10 animate-pulse ml-5"></div>
+            <div id="login-button" hidden>
+                <a href="login.html" class="button flex group ml-5">
+                    <!-- login icon start -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="m13 16 5-4-5-4v3H4v2h9z" />
+                        <path
+                            d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z" />
+                    </svg>
+                    <!-- login icon end -->
+                    <span class="pl-1">
+                        Login
+                    </span>
+                </a>
+            </div>
+            <div class="ml-5" id="login-user" hidden>
+                <div class="grid place-items-center">
+                    <img id="avatar" class="rounded-full w-10 h-10" src="" alt="avatar">
+                    <span id="username"></span>
                 </div>
             </div>
-        </div>
-        <!-- avatar end -->
+        </header>
 
-    </div>
+
+
+
+
+
+        <div class="border-2 border-black m-20 text-center">
+
+            <span class="text-7xl ms:text-3xl">
+                Profil in Arbeit
+            </span>
+
+        </div>
 
 
 
@@ -198,6 +177,7 @@
             </span>
         </div>
     </footer>
+    </div>
 
     <script src="authorization.js"></script>
     <script src="script.js"></script>
