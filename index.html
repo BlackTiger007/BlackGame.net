@@ -12,6 +12,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://BlackGame.net">
+    <meta property="og:title" content="BlackGame.net">
+    <meta property="og:description" content="Willkommen auf BlackGame.net">
+    <meta property="og:image" content="https://www.blackgame.net/logo.png">
+    <meta name="theme-color" content="#278a00">
+
+
     <link rel="stylesheet" href="output.css">
 </head>
 
@@ -19,7 +28,7 @@
     <header
         class=" w-full h-24 bg-green-600 mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b-4 border-b-black">
         <div>
-            <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <a href="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 240 240" width="40" height="40">
                     <style>
                         .a {
@@ -81,31 +90,33 @@
                 <!-- block icon end -->
                 </span>Stats
             </a>
-        </nav>
-        </a>
-        <div id="login-platzhalter" class="h-16 w-20 bg-white/10 animate-pulse ml-5"></div>
-        <div id="login-button" hidden>
-            <a href="login.html" class="button flex group ml-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    class="fill-white group-hover:fill-gray-300">
-                    <path d="m13 16 5-4-5-4v3H4v2h9z" />
-                    <path
-                        d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z" />
-                </svg>
-                <span class="pl-1">
-                    Login
-                </span>
-            </a>
-        </div>
-        <a href="profil.html" class="ml-5" id="login-user" hidden>
-            <div class="grid place-items-center">
-                <img id="avatar" class="rounded-full w-10 h-10" src="" alt="avatar">
-                <span id="username"></span>
+            <div id="login-platzhalter" class="h-16 w-20 bg-white/10 animate-pulse ml-5"></div>
+            <div id="login-button" hidden>
+                <a href="login.html" class="button flex group ml-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class="fill-white group-hover:fill-gray-300">
+                        <path d="m13 16 5-4-5-4v3H4v2h9z" />
+                        <path
+                            d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z" />
+                    </svg>
+                    <span class="pl-1">
+                        Login
+                    </span>
+                </a>
             </div>
+            <a href="profil.html" class="ml-5" id="login-user" hidden>
+                <div class="grid place-items-center">
+                    <img id="avatar" class="rounded-full w-10 h-10" src="" alt="avatar">
+                    <span id="username"></span>
+                </div>
+            </a>
+        </nav>
         </a>
     </header>
 
     <div class="h-screen">
+
+
 
         <span class="text-center">
             <h1 class="text-5xl"><br>Willkommen</h1>
